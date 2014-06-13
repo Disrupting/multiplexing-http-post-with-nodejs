@@ -50,8 +50,8 @@ In api.js, I put configuration + security credentials for a specific user I crea
 
 ```js
 var router = express.Router();
-var visualsearch = require('../lib/multiplexing');
-router.post('/multiplexing', visualsearch.submit(
+var multiplexing = require('../lib/multiplexing');
+router.post('/multiplexing', multiplexing.submit(
   "IP.IP.IP.IP",
   "/search",
   "aws_access_key",
